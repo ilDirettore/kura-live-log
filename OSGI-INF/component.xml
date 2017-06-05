@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" activate="activate" configuration-policy="ignore" deactivate="deactivate" enabled="true" name="org.eclipse.kura.livelog">
+   <implementation class="org.eclipse.kura.livelog.LiveLog"/>
+   <reference bind="setCloudService" cardinality="1..n" interface="org.eclipse.kura.cloud.CloudService" name="CloudService" policy="static" unbind="unsetCloudService"/> >
+</scr:component>
